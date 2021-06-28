@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ekle">
+
+    <EditText
+        android:id="@+id/listeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="Liste İsmi"/>
+
+
+    <EditText
+        android:id="@+id/tarih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="Alışveriş Tarihi"/>
+
+    <EditText
+        android:id="@+id/marketId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/tarih"
+        android:text="                                 Market İsmi"/>
+
+    <EditText
+        android:id="@+id/urunIsmi"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Isim"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="50dp"/>
+
+
+
+    <EditText
+        android:id="@+id/urunMiktari"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Miktar"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/urunIsmi"
+        android:layout_marginBottom="50dp"/>
+
+    <EditText
+        android:id="@+id/urunFiyati"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Fiyat"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/urunMiktari"
+        android:layout_marginBottom="50dp"/>
+
+    <Button
+        android:id="@+id/urunEkle"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Ekle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/urunlerRecView"
+        />
+
+    <Button
+        android:id="@+id/kaydet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kaydet"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
